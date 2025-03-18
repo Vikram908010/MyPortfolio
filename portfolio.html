@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Vikram Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/9b142a0ba6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><b><span>V</span>ikram</b> </h1>
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contanct</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="sideclose()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="sideopen()"></i>
+            </nav>
+
+            <div class="header-text">
+               
+                <h1>Hi, I'm <span>Vikram</span> <br>I'm a Software Enginner</h1>
+            </div>
+        </div>
+    </div>
+
+<!------------------------------About --------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img  id="image" src="vikrambackground.jpg.webp" alt="">
+                </div>
+                <div class="about-col-2">
+
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm am a recent graduate with a Bachelor's degree in Computer Science.My coursework focused on software development,and I'm proficient in Java,Sql and web development.I completed a web application project that streamlined data processing,reducing errors by 20%. I'm excited to apply my skills  in a dynamic software development role and contribute to innovative projects.</p>
+
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link"  onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Hobbies')">Hobbies</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+
+                    </div>
+
+                    <div class="tab-contents active-tab"  id="Skills">
+                        <ul>
+                            <li><span>Java</span><br>  - Backend developer</li>
+                            <li><span>Sql</span><br>- Oracle developer</li>
+                            <li><span>Web development</span><br>  - Required skills Html,Css,JavaScript,React</li>
+
+            
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Hobbies">
+                        <ul>
+                            <li><span>Photography</span><br>  -Shows I'm artistic and patient </li>
+                            <li><span>Social Media</span><br>- Ensure your social media accounts reflect a proffesional image</li>
+                            <li><span>Gardening</span><br>- Gardening and Flower arranging with eco-friendly culture</li>
+
+            
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents"  id="Education">
+                        <ul>
+                            <li><span>2018-2019</span><br>  - SSLC Completed With 70.01 Percentage </li>
+                            <li><span>2019-2021</span><br>-   HSC Completed With 84.54 Percentage  </li>
+                            <li><span>2021-2024</span><br>- B.SC Computer Science From Bharathidasan University</li>
+
+            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------services-->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+
+            <div class="services-list">
+               <div>
+                <i class="fa-solid fa-code"></i>
+                <h1>Digital Clock</h1>
+                <p>Display Current time,update every second using JavaScript ,simple and responsive design.</p>
+                 <a href="digital clock/index.html" target="_blank">view..</a>
+               </div>
+               <div>
+                <i class="fa-solid fa-crop"></i>        
+                <h1>Portfolio</h1>
+               <p>A responsive and interactive portfolio website showcasing my skills,projects and contac details.</p>
+                <a href="portfolio.html" target="_blank">View..</a>
+               </div>
+
+            </div>
+
+            
+           
+        </div>
+    </div>
+    <!------------Portfolio------------>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+
+            <div class="work-list">
+                <div class="work">
+                    <img src="port1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>The app connect you to the talented around the world.
+                            Download it from playstore.
+                        </p>
+                        <a href="https://play.google.com/store/apps?pli=1"  target="_blank"<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="port2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Physical health</h3>
+                        <p>It’s this time of year that you start to think about implementing an exercise regime. 
+                        </p>
+                        <a href="https://www.mcmillenhealth.org/tamtalks/physical-health"    target="_blank"<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="port3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Everybody dies</h3>
+                        <p>some suddenly, some slowly, some painfully, some peacefully. No one can escape death.
+                        </p>
+                        <a href="https://www.makemytrip.com/tripideas/relaxation-destinations" target="_blank" <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-------------------Contact--------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact me</h1>
+              <p> <i class="fa-solid fa-square-envelope"></i>vikramsam340@gmail.com</p>
+              <p><i class="fa-solid fa-phone"></i> 9344630711</p>
+              <div class="social-icons">
+                <a href="https://www.facebook.com/share/1A49NELcdf" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/vikram-m-a783492a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+
+                " target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/___simple_._07/profilecard/?igsh=b215aXVreHU1YTJs" target="_blank"> <i class="fab fa-instagram"></i> </a>
+                <a href="https://github.com/Vikram908010" target="_blank"><i class="fab fa-github"></i></a>    
+              </div>
+              <a href="Vikram's Resume.pdf.pdf" class="cv" target="_blank">Download cv</a>
+
+            </div>
+            <div class="contact-right">
+             <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                <button type="submit" class="btn1">Submit</button>
+
+             </form>
+             <span id="msge"></span>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; vikram
+
+        </p>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+       
+    </div>
+</div>
+
+    <script src="portfolio.js"></script>
+    <script>
+        
+    var sidemenu=document.getElementById("sidemenu")
+    function sideopen(){
+
+        sidemenu.style.right="0"
+    }
+    function sideclose(){
+
+        sidemenu.style.right="-200px"
+    }
+    </script>
+    
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwyt002AlJ9BS2cILXYRzTzC1VMAyaaf85v2PGq-Bby8jJxjJQ3bm9dGQT_Vmpx_mOW/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg=document.getElementById("msge")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+         msg.innerHTML="message sent successfully"
+         setTimeout(function(){
+            msg.innerHTML=""
+
+         },5000)
+         form.reset()
+
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
